@@ -1,6 +1,6 @@
 import 'package:eaqari/core/widgets/app_text_button.dart';
 import 'package:eaqari/core/widgets/app_text_form_field.dart';
-import 'package:eaqari/features/auth/widgets/country_and_gov_drop_down.dart';
+import 'package:eaqari/features/auth/presentation/widgets/country_and_gov_drop_down.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

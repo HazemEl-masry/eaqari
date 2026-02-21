@@ -1,5 +1,5 @@
-import 'package:eaqari/features/auth/screens/login_screen.dart';
-import 'package:eaqari/features/auth/screens/register_screen.dart';
+import 'package:eaqari/features/auth/presentation/screens/login_screen.dart';
+import 'package:eaqari/features/auth/presentation/screens/register_screen.dart';
 import 'package:eaqari/features/home/presentation/screens/home_screen.dart';
 import 'package:go_router/go_router.dart';
 

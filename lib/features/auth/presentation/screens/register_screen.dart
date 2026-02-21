@@ -1,5 +1,5 @@
-import 'package:eaqari/features/auth/widgets/register_app_bar.dart';
-import 'package:eaqari/features/auth/widgets/register_body.dart';
+import 'package:eaqari/features/auth/presentation/widgets/register_app_bar.dart';
+import 'package:eaqari/features/auth/presentation/widgets/register_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';

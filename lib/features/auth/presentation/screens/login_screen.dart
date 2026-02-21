@@ -1,6 +1,6 @@
-import 'package:eaqari/features/auth/widgets/login_app_bar.dart';
-import 'package:eaqari/features/auth/widgets/login_body.dart';
-import 'package:eaqari/features/auth/widgets/social_media_icons.dart';
+import 'package:eaqari/features/auth/presentation/widgets/login_app_bar.dart';
+import 'package:eaqari/features/auth/presentation/widgets/login_body.dart';
+import 'package:eaqari/features/auth/presentation/widgets/social_media_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 class LoginScreen extends StatelessWidget {
