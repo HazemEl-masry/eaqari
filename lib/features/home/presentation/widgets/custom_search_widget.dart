@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:eaqari/core/theme/app_colors.dart';
+import 'package:eaqari/core/theme/app_spacing.dart';
+import 'package:eaqari/core/theme/app_text_styles.dart';
 
 class CustomSearchWidget extends StatelessWidget {
   const CustomSearchWidget({super.key});
@@ -10,10 +13,10 @@ class CustomSearchWidget extends StatelessWidget {
     return GestureDetector(
       onTap: () {},
       child: Container(
-        padding: const EdgeInsets.all(20.0),
+        padding: AppSpacing.searchWidgetPadding,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(18.0.r),
-          color: const Color(0xff384B6B),
+          borderRadius: AppSpacing.radiusLg,
+          color: AppColors.searchBackground,
         ),
         child: Row(
           children: [
@@ -23,28 +26,23 @@ class CustomSearchWidget extends StatelessWidget {
               size: 17.0.w,
             ),
             SizedBox(width: 15.0.w),
-            const Text(
-              "Search for property...",
-              style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
-            ),
+            Text("Search for property...", style: AppTextStyles.bodyWhite),
             const Spacer(),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 8.h),
+              padding: AppSpacing.filterButtonPadding,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(22.0),
-                color: const Color(0xff517DFA),
+                borderRadius: AppSpacing.radiusXl,
+                color: AppColors.secondary,
               ),
               child: Row(
                 children: [
-                  Icon(FontAwesomeIcons.sliders, size: 12.0.w, color: Colors.white),
-                  SizedBox(width: 10.0.w),
-                  const Text(
-                    "Filter",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w600,
-                    ),
+                  Icon(
+                    FontAwesomeIcons.sliders,
+                    size: 12.0.w,
+                    color: Colors.white,
                   ),
+                  SizedBox(width: 10.0.w),
+                  Text("Filter", style: AppTextStyles.bodyWhite),
                 ],
               ),
             ),

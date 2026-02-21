@@ -1,6 +1,7 @@
 import 'package:eaqari/core/router/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:eaqari/core/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp.router(
         debugShowCheckedModeBanner: false,
         title: "Eaqari",
-        theme: ThemeData(),
+        theme: AppTheme.lightTheme,
         routerConfig: appRouter,
       ),
     );

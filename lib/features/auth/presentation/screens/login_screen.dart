@@ -3,6 +3,8 @@ import 'package:eaqari/features/auth/presentation/widgets/login_body.dart';
 import 'package:eaqari/features/auth/presentation/widgets/social_media_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:eaqari/core/theme/app_spacing.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
@@ -10,7 +12,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 15.0.w),
+        padding: AppSpacing.screenPaddingHorizontal,
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -21,22 +23,16 @@ class LoginScreen extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                    child: Divider(
-                      indent: 40.0.w,
-                      endIndent: 10.0.w,
-                    ),
+                    child: Divider(indent: 40.0.w, endIndent: 10.0.w),
                   ),
                   const Text("or"),
                   Expanded(
-                    child: Divider(
-                      indent: 10.0.w,
-                      endIndent: 40.0.w,
-                    ),
+                    child: Divider(indent: 10.0.w, endIndent: 40.0.w),
                   ),
                 ],
               ),
               SizedBox(height: 7.0.h),
-              const LoginBody()
+              const LoginBody(),
             ],
           ),
         ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:eaqari/core/theme/app_spacing.dart';
+import 'package:eaqari/core/theme/app_text_styles.dart';
 
 class LoginAppBar extends StatelessWidget {
   const LoginAppBar({super.key});
@@ -7,34 +9,18 @@ class LoginAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(
-        top: 40.0.h,
-        bottom: 20.0.h
-      ),
+      padding: AppSpacing.loginAppBarPadding,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset("assets/images/logo.png",width: 120.w,),
-            ],
+            children: [Image.asset("assets/images/logo.png", width: 120.w)],
           ),
           SizedBox(height: 20.0.h),
-          Text(
-            "Login",
-            style: TextStyle(
-              fontSize: 22.0.sp,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+          Text("Login", style: AppTextStyles.h1),
           SizedBox(height: 10.0.h),
-          const Text(
-            "Continue with:",
-            style: TextStyle(
-              fontWeight: FontWeight.w500
-            ),
-          ),
+          Text("Continue with:", style: AppTextStyles.title),
         ],
       ),
     );

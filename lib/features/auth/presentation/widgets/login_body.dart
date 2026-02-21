@@ -3,6 +3,7 @@ import 'package:eaqari/core/widgets/app_text_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
+import 'package:eaqari/core/theme/app_text_styles.dart';
 
 class LoginBody extends StatefulWidget {
   const LoginBody({super.key});
@@ -18,20 +19,14 @@ class _LoginBodyState extends State<LoginBody> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          "Email",
-          style: TextStyle(fontSize: 16.0.sp, fontWeight: FontWeight.w500),
-        ),
+        Text("Email", style: AppTextStyles.title),
         SizedBox(height: 7.0.h),
         const AppTextFormField(
           prefixIcon: Icons.email,
           hintText: "example@mail.com",
         ),
         SizedBox(height: 20.0.h),
-        Text(
-          "Password",
-          style: TextStyle(fontSize: 16.0.sp, fontWeight: FontWeight.w500),
-        ),
+        Text("Password", style: AppTextStyles.title),
         SizedBox(height: 7.0.h),
         AppTextFormField(
           prefixIcon: Icons.lock,
@@ -48,10 +43,7 @@ class _LoginBodyState extends State<LoginBody> {
           alignment: AlignmentGeometry.centerRight,
           child: TextButton(
             onPressed: () {},
-            child: const Text(
-              "Forget Password",
-              style: TextStyle(color: Colors.blue),
-            ),
+            child: Text("Forget Password", style: AppTextStyles.linkBlue),
           ),
         ),
         Align(
@@ -66,12 +58,7 @@ class _LoginBodyState extends State<LoginBody> {
               onPressed: () {
                 context.push("/RegisterScreen");
               },
-              child: const Text(
-                "Register",
-                style: TextStyle(
-                  color: Colors.blue
-                ),
-              )
+              child: Text("Register", style: AppTextStyles.linkBlue),
             ),
           ],
         ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:eaqari/core/theme/app_spacing.dart';
+import 'package:eaqari/core/theme/app_text_styles.dart';
 
 class CountryAndGovDropDown extends StatelessWidget {
   const CountryAndGovDropDown({super.key});
@@ -10,46 +12,28 @@ class CountryAndGovDropDown extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
-          "Country",
-          style: TextStyle(
-            fontWeight: FontWeight.w600
-          ),
-        ),
+        Text("Country", style: AppTextStyles.title),
         SizedBox(height: 10.0.h),
         DropdownButtonFormField<String>(
           decoration: InputDecoration(
             hintText: "Country",
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(13.0.r)
-            ),
-            prefixIcon: const Icon(FontAwesomeIcons.locationDot)
+            border: OutlineInputBorder(borderRadius: AppSpacing.radiusSm),
+            prefixIcon: const Icon(FontAwesomeIcons.locationDot),
           ),
-          items: const [
-            DropdownMenuItem(child: Text('cairo'))
-          ],
-          onChanged: (value) {}
+          items: const [DropdownMenuItem(child: Text('cairo'))],
+          onChanged: (value) {},
         ),
         SizedBox(height: 15.0.h),
-        const Text(
-          "City",
-          style: TextStyle(
-            fontWeight: FontWeight.w600
-          ),
-        ),
+        Text("City", style: AppTextStyles.title),
         SizedBox(height: 10.0.h),
         DropdownButtonFormField<String>(
           decoration: InputDecoration(
             hintText: "Country",
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(13.0.r)
-            ),
-            prefixIcon: const Icon(FontAwesomeIcons.city)
+            border: OutlineInputBorder(borderRadius: AppSpacing.radiusSm),
+            prefixIcon: const Icon(FontAwesomeIcons.city),
           ),
-          items: const [
-            DropdownMenuItem(child: Text('cairo'))
-          ],
-          onChanged: (value) {}
+          items: const [DropdownMenuItem(child: Text('cairo'))],
+          onChanged: (value) {},
         ),
       ],
     );

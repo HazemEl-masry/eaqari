@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:eaqari/core/theme/app_spacing.dart';
 
 class SocialMediaIcons extends StatelessWidget {
   const SocialMediaIcons({super.key});
@@ -15,7 +16,7 @@ class SocialMediaIcons extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             padding: EdgeInsets.zero,
             minimumSize: Size(40.0.w, 20.0.h),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadiusGeometry.circular(12.0.r))
+            shape: RoundedRectangleBorder(borderRadius: AppSpacing.radiusSm),
           ),
           child: SvgPicture.asset("assets/svg/facebook.svg"),
         ),
@@ -25,7 +26,7 @@ class SocialMediaIcons extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             padding: EdgeInsets.zero,
             minimumSize: Size(40.0.w, 20.0.h),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadiusGeometry.circular(12.0.r))
+            shape: RoundedRectangleBorder(borderRadius: AppSpacing.radiusSm),
           ),
           child: SvgPicture.asset("assets/svg/google.svg"),
         ),
@@ -36,7 +37,7 @@ class SocialMediaIcons extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             padding: EdgeInsets.zero,
             minimumSize: Size(40.0.w, 20.0.h),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadiusGeometry.circular(12.0.r))
+            shape: RoundedRectangleBorder(borderRadius: AppSpacing.radiusSm),
           ),
           child: SvgPicture.asset("assets/svg/apple.svg"),
         ),
