@@ -2,6 +2,7 @@ import 'package:eaqari/core/widgets/app_text_button.dart';
 import 'package:eaqari/core/widgets/app_text_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginBody extends StatefulWidget {
   const LoginBody({super.key});
@@ -62,7 +63,9 @@ class _LoginBodyState extends State<LoginBody> {
           children: [
             const Text("Don't Have an Account"),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                context.push("/RegisterScreen");
+              },
               child: const Text(
                 "Register",
                 style: TextStyle(
