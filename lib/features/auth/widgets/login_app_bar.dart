@@ -9,7 +9,7 @@ class LoginAppBar extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(
         top: 40.0.h,
-        bottom: 30.0.h
+        bottom: 20.0.h
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -22,17 +22,16 @@ class LoginAppBar extends StatelessWidget {
           ),
           SizedBox(height: 20.0.h),
           Text(
-            "👋🏻Welcome Back",
+            "Login",
             style: TextStyle(
-              fontSize: 20.0.sp,
+              fontSize: 22.0.sp,
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 20.0.h),
-          Text(
-            "Login to continue:",
+          SizedBox(height: 10.0.h),
+          const Text(
+            "Continue with:",
             style: TextStyle(
-              fontSize: 15.0.sp,
               fontWeight: FontWeight.w500
             ),
           ),

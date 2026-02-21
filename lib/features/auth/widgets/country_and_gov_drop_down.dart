@@ -30,6 +30,27 @@ class CountryAndGovDropDown extends StatelessWidget {
           ],
           onChanged: (value) {}
         ),
+        SizedBox(height: 15.0.h),
+        const Text(
+          "City",
+          style: TextStyle(
+            fontWeight: FontWeight.w600
+          ),
+        ),
+        SizedBox(height: 10.0.h),
+        DropdownButtonFormField<String>(
+          decoration: InputDecoration(
+            hintText: "Country",
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(13.0.r)
+            ),
+            prefixIcon: const Icon(FontAwesomeIcons.city)
+          ),
+          items: const [
+            DropdownMenuItem(child: Text('cairo'))
+          ],
+          onChanged: (value) {}
+        ),
       ],
     );
   }
